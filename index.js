@@ -1,22 +1,15 @@
-// --------- hamburger
 const hamburgerMenu = document.querySelector('.header__hamburger__menu');
 const hamburgerNav = document.querySelector('.header__burger__menu-nav');
 const hamburgerOpenBtn = document.querySelector('.header__burger-btn');
 const hamburgerCloseBtn = document.querySelector('.header__burger__menu_close');
 
-hamburgerOpenBtn.addEventListener('click', () => {
-  hamburgerMenu.classList.remove('burger_hide');
-  hamburgerNav.classList.add('header__burger__menu-nav_open');
-});
+const makeSitesBlock = document.querySelector('.make-sites');
+const makeAppBlock = document.querySelector('.make-app');
+const workWithDataBlock = document.querySelector('.work-with-data');
+const creativityBlock = document.querySelector('.creativity');
+const makeDesignBlock = document.querySelector('.make-design');
+const softSkillsBlock = document.querySelector('.soft-skills');
 
-hamburgerCloseBtn.addEventListener('click', () => {
-  hamburgerMenu.classList.add('burger_hide');
-  hamburgerNav.classList.remove('header__burger__menu-nav_open');
-});
-
-
-
-// --------- form
 const submit = document.querySelector('.footer__contacts__inpt-form__btn');
 const nameInput = document.querySelector('.inpt_name');
 const emailInput = document.querySelector('.inpt_email');
@@ -28,6 +21,19 @@ const emailError = document.querySelector(
   '.footer__contacts__inpt-form__email_error'
 );
 
+// --------- hamburger
+
+hamburgerOpenBtn.addEventListener('click', () => {
+  hamburgerMenu.classList.remove('burger_hide');
+  hamburgerNav.classList.add('header__burger__menu-nav_open');
+});
+
+hamburgerCloseBtn.addEventListener('click', () => {
+  hamburgerMenu.classList.add('burger_hide');
+  hamburgerNav.classList.remove('header__burger__menu-nav_open');
+});
+
+// --------- form
 submit.addEventListener('click', async (e) => {
   nameError.classList.add('hide');
   emailError.classList.add('hide');
@@ -74,9 +80,6 @@ submit.addEventListener('click', async (e) => {
   }
 });
 
-
-
-
 // --------- Fibonacci func
 function fibbonacci(numberInList) {
   if (numberInList <= 0) return 0;
@@ -90,4 +93,33 @@ function fibbonacci(numberInList) {
     b = digit;
   }
   return b;
+}
+
+// -------- skills-percent-level-section
+function fillingPercentLine(parentComponent, numberOfPercent) {
+  if (!numberOfPercent) numberOfPercent = 0;
+  
+  parentComponent.querySelector(
+    '.main__skills__level_item_title__percent'
+  ).innerHTML = `${numberOfPercent}%`;
+  const coloredLine = parentComponent.querySelector(
+    '.main__skills__level_item_percent-line_color'
+  );
+  coloredLine.style.width = `${numberOfPercent}%`;
+}
+
+const blocksList = [
+  makeSitesBlock,
+  makeAppBlock,
+  workWithDataBlock,
+  creativityBlock,
+  makeDesignBlock,
+  softSkillsBlock,
+];
+
+const percentLevelList = [100, 85, 90, 75, 90, 95];
+
+
+for (let i = 0; i < blocksList.length; i++) {
+  fillingPercentLine(blocksList[i], percentLevelList[i]);
 }
