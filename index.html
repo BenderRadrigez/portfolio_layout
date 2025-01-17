@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Portfolio Layout</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__sotial-links">
+        <p class="header__sotial-links__text">Социальные сети</p>
+        <div class="header__sotial-links__line"></div>
+        <div class="header__sotial-links__sites">
+          <a href="http://github.com"
+            ><img
+              src="./assets/icons/basic/Github.svg"
+              alt="github"
+              class="header__sotial-links__sites_size"
+          /></a>
+          <a href="http://instagram.com"
+            ><img
+              src="./assets/icons/basic/Instagram.svg"
+              alt="instagram"
+              class="header__sotial-links__sites_size"
+          /></a>
+          <a href="http://facebook.com"
+            ><img
+              src="./assets/icons/basic/Facebook.svg"
+              alt="facebook"
+              class="header__sotial-links__sites_size"
+          /></a>
+        </div>
+      </div>
+
+      <div class="header__preview">
+        <div class="header__preview__name">
+          <div class="marker"></div>
+          <h4 class="header__preview__name__text">
+            Меня зовут Александра Смит
+          </h4>
+        </div>
+        <h1 class="header__preview__title">
+          Я web-разработчик <br />из города Москва
+        </h1>
+        <nav class="header__preview__navigation">
+          <a
+            href="#portfolio"
+            class="header__preview__navigation__button_to-portfolio button button_yellow"
+          >
+            Портфолио
+          </a>
+          <a
+            href="#about-me"
+            class="header__preview__navigation__button_to-about button"
+          >
+            Про меня
+          </a>
+        </nav>
+      </div>
+
+      <button class="header__burger-btn">
+        <img src="./assets/icons/basic/Hamburger.svg" alt="" />
+      </button>
+
+      <div class="header__hamburger__menu burger_bg burger_hide">
+        <nav class="header__burger__menu-nav">
+          <ul class="header__burger__menu__list">
+            <li class="header__burger__menu__list__item">
+              <a href="#about-me" class="header__burger__menu__list__item__link"
+                >ПРО МЕНЯ</a
+              >
+            </li>
+            <li class="header__burger__menu__list__item">
+              <a
+                href="#expiriens"
+                class="header__burger__menu__list__item__link"
+                >МОЙ ОПЫТ</a
+              >
+            </li>
+            <li class="header__burger__menu__list__item">
+              <a href="#skills" class="header__burger__menu__list__item__link"
+                >МОИ НАВЫКИ</a
+              >
+            </li>
+            <li class="header__burger__menu__list__item">
+              <a
+                href="#portfolio"
+                class="header__burger__menu__list__item__link"
+                >МОИ РАБОТЫ</a
+              >
+            </li>
+            <li class="header__burger__menu__list__item">
+              <a href="#price" class="header__burger__menu__list__item__link"
+                >ПРАЙС-ЛИСТ</a
+              >
+            </li>
+            <li class="header__burger__menu__list__item">
+              <a href="#contacts" class="header__burger__menu__list__item__link"
+                >КОНТАКТЫ</a
+              >
+            </li>
+          </ul>
+
+          <ul class="header__burger__menu__links">
+            <li>
+              <a href="http://github.com"
+                ><img
+                  src="./assets/icons/basic/Github.svg"
+                  alt="github"
+                  class="header__burger__menu__links_size"
+              /></a>
+            </li>
+            <li>
+              <a href="http://instagram.com"
+                ><img
+                  src="./assets/icons/basic/Instagram.svg"
+                  alt="instagram"
+                  class="header__burger__menu__links_size"
+              /></a>
+            </li>
+            <li>
+              <a href="http://facebook.com"
+                ><img
+                  src="./assets/icons/basic/Facebook.svg"
+                  alt="facebook"
+                  class="header__burger__menu__links_size"
+              /></a>
+            </li>
+          </ul>
+
+          <button class="header__burger__menu_close">
+            <img src="./assets/icons/basic/Close.svg" alt="" />
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="main__about" id="about-me">
+        <img
+          src="./assets/images/Photo.png"
+          alt="photo"
+          class="main__about__photo"
+        />
+
+        <div class="main__about__text-block">
+          <div class="main__about__header main__header_block">
+            <div class="main__about__title main__header_block_titles">
+              <div class="marker"></div>
+              <h4 class="main__about_title_text main__header_block_titles_text">
+                Про меня
+              </h4>
+            </div>
+
+            <h2
+              class="main__about__text-block__header main__header_block_headers"
+            >
+              Меня зовут Александра
+            </h2>
+
+            <div class="yellow-line"></div>
+          </div>
+
+          <p class="main__about__text-block__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum
+          </p>
+
+          <div class="main__about__text-block__scills-group">
+            <div class="main__about__text-block__scills-group__card">
+              <div
+                class="main__about__text-block__scills-group__card__img icon-img"
+              >
+                <div class="marker"></div>
+                <img
+                  src="./assets/icons/basic/web development.svg"
+                  alt="web development"
+                  class="icon"
+                />
+              </div>
+
+              <div class="main__about__text-block__scills-group__card__text">
+                <h4
+                  class="main__about__text-block__scills-group__card__text__title"
+                >
+                  Web-разработка
+                </h4>
+                <p
+                  class="main__about__text-block__scills-group__card__text__description"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+
+            <div class="main__about__text-block__scills-group__card">
+              <div
+                class="main__about__text-block__scills-group__card__img icon-img"
+              >
+                <div class="marker"></div>
+                <img
+                  src="./assets/icons/basic/Mobile dev.svg"
+                  alt="mobile development"
+                  class="icon"
+                />
+              </div>
+
+              <div class="main__about__text-block__scills-group__card__text">
+                <h4
+                  class="main__about__text-block__scills-group__card__text__title"
+                >
+                  Разработка приложений
+                </h4>
+
+                <p
+                  class="main__about__text-block__scills-group__card__text__description"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+
+            <div class="main__about__text-block__scills-group__card">
+              <div
+                class="main__about__text-block__scills-group__card__img icon-img"
+              >
+                <div class="marker"></div>
+                <img
+                  src="./assets/icons/basic/Design.svg"
+                  alt="design"
+                  class="icon"
+                />
+              </div>
+
+              <div class="main__about__text-block__scills-group__card__text">
+                <h4
+                  class="main__about__text-block__scills-group__card__text__title"
+                >
+                  UI/UX Design
+                </h4>
+
+                <p
+                  class="main__about__text-block__scills-group__card__text__description"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__expiriens" id="expiriens">
+        <div class="main__expiriens__header main__header_block">
+          <div class="main__expiriens__title main__header_block_titles">
+            <div class="marker"></div>
+            <h4
+              class="main__expiriens__title__text main__header_block_titles_text"
+            >
+              Опыт
+            </h4>
+          </div>
+
+          <h2 class="main__expiriens__header main__header_block_headers">
+            Чем я буду полезна
+          </h2>
+
+          <div class="yellow-line"></div>
+        </div>
+
+        <div class="main__expiriens__description">
+          <div
+            class="main__expiriens__description__education main__expiriens__description_block"
+          >
+            <h3 class="main__expiriens__description_block__header">
+              Образование
+            </h3>
+
+            <div class="main__expiriens__description_block__item">
+              <div class="main__expiriens__description_block__item__title">
+                <div
+                  class="main__expiriens__description_block__item__title__icon icon-img"
+                >
+                  <div class="marker"></div>
+                  <img
+                    src="./assets/icons/basic/University.svg"
+                    alt="University"
+                    class="icon"
+                  />
+                </div>
+
+                <div
+                  class="main__expiriens__description_block__item__title__header"
+                >
+                  <h5
+                    class="main__expiriens__description_block__item__title__header_h"
+                  >
+                    МГТУ им. Н. Э. Баумана
+                  </h5>
+
+                  <p
+                    class="main__expiriens__description_block__item__title__header_p"
+                  >
+                    Диплом магистра | Москва (2014-2020)
+                  </p>
+                </div>
+              </div>
+
+              <p class="main__expiriens__description_block__item__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmo.
+              </p>
+            </div>
+
+            <div class="main__expiriens__description_block__item">
+              <div class="main__expiriens__description_block__item__title">
+                <div
+                  class="main__expiriens__description_block__item__title__icon icon-img"
+                >
+                  <div class="marker"></div>
+                  <img
+                    src="./assets/icons/basic/Courses.svg"
+                    alt="Courses"
+                    class="icon"
+                  />
+                </div>
+
+                <div
+                  class="main__expiriens__description_block__item__title__header"
+                >
+                  <h5
+                    class="main__expiriens__description_block__item__title__header_h"
+                  >
+                    Udemy
+                  </h5>
+
+                  <p
+                    class="main__expiriens__description_block__item__title__header_p"
+                  >
+                    Курсы по Web-разработке
+                  </p>
+                </div>
+              </div>
+
+              <p class="main__expiriens__description_block__item__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmo.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="main__expiriens__description__work-expiriens main__expiriens__description_block"
+          >
+            <h3 class="main__expiriens__description_block__header">
+              Опыт работы
+            </h3>
+
+            <div class="main__expiriens__description_block__item">
+              <div class="main__expiriens__description_block__item__title">
+                <div
+                  class="main__expiriens__description_block__item__title__icon icon-img"
+                >
+                  <div class="marker"></div>
+                  <img
+                    src="./assets/icons/basic/Developer.svg"
+                    alt="developer"
+                    class="icon"
+                  />
+                </div>
+
+                <div
+                  class="main__expiriens__description_block__item__title__header"
+                >
+                  <h5
+                    class="main__expiriens__description_block__item__title__header_h"
+                  >
+                    Front-End Developer
+                  </h5>
+
+                  <p
+                    class="main__expiriens__description_block__item__title__header_p"
+                  >
+                    EPAM | Москва (2018-2019)
+                  </p>
+                </div>
+              </div>
+
+              <p class="main__expiriens__description_block__item__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmo.
+              </p>
+            </div>
+
+            <div class="main__expiriens__description_block__item">
+              <div class="main__expiriens__description_block__item__title">
+                <div
+                  class="main__expiriens__description_block__item__title__icon icon-img"
+                >
+                  <div class="marker"></div>
+                  <img
+                    src="./assets/icons/basic/designer.svg"
+                    alt="designer"
+                    class="icon"
+                  />
+                </div>
+
+                <div
+                  class="main__expiriens__description_block__item__title__header"
+                >
+                  <h5
+                    class="main__expiriens__description_block__item__title__header_h"
+                  >
+                    UI/UX Designer
+                  </h5>
+
+                  <p
+                    class="main__expiriens__description_block__item__title__header_p"
+                  >
+                    Squad Team | Москва (2018)
+                  </p>
+                </div>
+              </div>
+
+              <p class="main__expiriens__description_block__item__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__skills" id="skills">
+        <div class="main__skills__header main__header_block">
+          <div class="main__expiriens__title main__header_block_titles">
+            <div class="marker"></div>
+            <h4
+              class="main__expiriens__title__text main__header_block_titles_text"
+            >
+              Навыки
+            </h4>
+          </div>
+
+          <h2 class="main__expiriens__header main__header_block_headers">
+            Что я использую в работе
+          </h2>
+
+          <div class="yellow-line"></div>
+        </div>
+
+        <div class="main__skills__technologies">
+          <div class="main__skills__technologies__item">
+            <img
+              src="./assets/icons/technolpogies/html5.svg"
+              alt="html"
+              class="tech-item"
+            />
+            <h4 class="main__skills__technologies__item_header">HTML5</h4>
+            <p class="main__skills__technologies__item_description">
+              Именно он создает каркас вашего сайта или приложения, а пятая
+              версия позволит мне создавать более SEO-оптимизированную структуру
+              вашего продукта
+            </p>
+          </div>
+
+          <div class="main__skills__technologies__item">
+            <img
+              src="./assets/icons/technolpogies/css3.svg"
+              alt="css"
+              class="tech-item"
+            />
+            <h4 class="main__skills__technologies__item_header">CSS3</h4>
+            <p class="main__skills__technologies__item_description">
+              Этот язык стилей позволяет мне создавать абсолютно любой внешний
+              вид вашего сайта или приложения. Все ограничивается только вашей
+              фантазией!
+            </p>
+          </div>
+
+          <div class="main__skills__technologies__item">
+            <img
+              src="./assets/icons/technolpogies/JS.svg"
+              alt="js"
+              class="tech-item"
+            />
+            <h4 class="main__skills__technologies__item_header">Java Script</h4>
+            <p class="main__skills__technologies__item_description">
+              Этот язык программирования позволяет оживить все что угодно:
+              слайдеры, окна, подсказки, вкладки, получение данных от сервера и
+              многое другое
+            </p>
+          </div>
+
+          <div class="main__skills__technologies__item">
+            <img
+              src="./assets/icons/technolpogies/Jquery.svg"
+              alt="jquery"
+              class="tech-item"
+            />
+            <h4 class="main__skills__technologies__item_header">Jquery</h4>
+            <p class="main__skills__technologies__item_description">
+              Библиотека Jquery позволит ускорить разработку. Без необходимости
+              интегрировать в проект мы её не будем, но навык работы с ней
+              присутствует
+            </p>
+          </div>
+
+          <div class="main__skills__technologies__item">
+            <img
+              src="./assets/icons/technolpogies/React.svg"
+              alt="react"
+              class="tech-item"
+            />
+            <h4 class="main__skills__technologies__item_header">React</h4>
+            <p class="main__skills__technologies__item_description">
+              Эта библиотека позволяет создавать web-приложения. Мы можем
+              создать максимально интерактивный продукт именно под ваши цели
+            </p>
+          </div>
+
+          <div class="main__skills__technologies__item">
+            <img
+              src="./assets/icons/technolpogies/Node.js.svg"
+              alt="Node"
+              class="tech-item"
+            />
+            <h4 class="main__skills__technologies__item_header">Node.js</h4>
+            <p class="main__skills__technologies__item_description">
+              Эта платформа позволяет создавать бэкенд для вашего продукта -
+              “мозги”, которые будут выполнять действия, которые пользователь не
+              видит
+            </p>
+          </div>
+
+          <div class="main__skills__technologies__item">
+            <img
+              src="./assets/icons/technolpogies/Mongo.db.svg"
+              alt="Mongo.db"
+              class="tech-item"
+            />
+            <h4 class="main__skills__technologies__item_header">Mongo.db</h4>
+            <p class="main__skills__technologies__item_description">
+              Это нереляционная база данных, которая будет хранить данные вашего
+              сайта или приложения
+            </p>
+          </div>
+        </div>
+
+        <div class="main__skills__level">
+          <div class="main__skills__level_item">
+            <div class="main__skills__level_item_title">
+              <div class="marker"></div>
+              <h4 class="main__skills__level_item_title_text">
+                Создание сайтов
+              </h4>
+              <p class="main__skills__level_item_title__percent">0%</p>
+            </div>
+            <div class="main__skills__level_item_percent-line">
+              <div class="main__skills__level_item_percent-line_color"></div>
+            </div>
+          </div>
+
+          <div class="main__skills__level_item">
+            <div class="main__skills__level_item_title">
+              <div class="marker"></div>
+              <h4 class="main__skills__level_item_title_text">
+                Создание приложений
+              </h4>
+              <p class="main__skills__level_item_title__percent">0%</p>
+            </div>
+            <div class="main__skills__level_item_percent-line">
+              <div class="main__skills__level_item_percent-line_color"></div>
+            </div>
+          </div>
+
+          <div class="main__skills__level_item">
+            <div class="main__skills__level_item_title">
+              <div class="marker"></div>
+              <h4 class="main__skills__level_item_title_text">
+                Работа с данными
+              </h4>
+              <p class="main__skills__level_item_title__percent">0%</p>
+            </div>
+            <div class="main__skills__level_item_percent-line">
+              <div class="main__skills__level_item_percent-line_color"></div>
+            </div>
+          </div>
+
+          <div class="main__skills__level_item">
+            <div class="main__skills__level_item_title">
+              <div class="marker"></div>
+              <h4 class="main__skills__level_item_title_text">Креативность</h4>
+              <p class="main__skills__level_item_title__percent">0%</p>
+            </div>
+            <div class="main__skills__level_item_percent-line">
+              <div class="main__skills__level_item_percent-line_color"></div>
+            </div>
+          </div>
+
+          <div class="main__skills__level_item">
+            <div class="main__skills__level_item_title">
+              <div class="marker"></div>
+              <h4 class="main__skills__level_item_title_text">
+                Создание дизайна
+              </h4>
+              <p class="main__skills__level_item_title__percent">0%</p>
+            </div>
+            <div class="main__skills__level_item_percent-line">
+              <div class="main__skills__level_item_percent-line_color"></div>
+            </div>
+          </div>
+
+          <div class="main__skills__level_item">
+            <div class="main__skills__level_item_title">
+              <div class="marker"></div>
+              <h4 class="main__skills__level_item_title_text">Soft skills</h4>
+              <p class="main__skills__level_item_title__percent">0%</p>
+            </div>
+            <div class="main__skills__level_item_percent-line">
+              <div class="main__skills__level_item_percent-line_color"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__portfolio" id="portfolio">
+        <div class="main__skills__header main__header_block">
+          <div class="main__expiriens__title main__header_block_titles">
+            <div class="marker"></div>
+            <h4
+              class="main__expiriens__title__text main__header_block_titles_text"
+            >
+              Портфолио
+            </h4>
+          </div>
+
+          <h2 class="main__expiriens__header main__header_block_headers">
+            Мои работы
+          </h2>
+
+          <div class="yellow-line"></div>
+        </div>
+
+        <div class="main__portfolio__links">
+          <a href="#" class="main__portfolio__links__item grid_item1"
+            ><img
+              src="./assets/images/portfolio/uber.png"
+              alt="uber"
+              class="main__portfolio__links__item__img"
+            />
+          </a>
+          <a href="#" class="main__portfolio__links__item grid_item2"
+            ><img
+              src="./assets/images/portfolio/pulse.png"
+              alt="pulse"
+              class="main__portfolio__links__item__img"
+            />
+          </a>
+          <a href="#" class="main__portfolio__links__item grid_item3"
+            ><img
+              src="./assets/images/portfolio/bread.jpg"
+              alt="bread"
+              class="main__portfolio__links__item__img"
+            />
+          </a>
+          <a href="#" class="main__portfolio__links__item grid_item4"
+            ><img
+              src="./assets/images/portfolio/plans.png"
+              alt="plans"
+              class="main__portfolio__links__item__img"
+            />
+          </a>
+          <a href="#" class="main__portfolio__links__item grid_item5"
+            ><img
+              src="./assets/images/portfolio/ipad.png"
+              alt="ipad"
+              class="main__portfolio__links__item__img"
+            />
+          </a>
+          <a href="#" class="main__portfolio__links__item grid_item6"
+            ><img
+              src="./assets/images/portfolio/mac.png"
+              alt="mac"
+              class="main__portfolio__links__item__img"
+            />
+          </a>
+        </div>
+      </section>
+
+      <section class="main__price-list" id="price">
+        <div class="main__skills__header main__header_block">
+          <div class="main__expiriens__title main__header_block_titles">
+            <div class="marker"></div>
+            <h4
+              class="main__expiriens__title__text main__header_block_titles_text"
+            >
+              Прайс-лист
+            </h4>
+          </div>
+
+          <div class="yellow-line"></div>
+        </div>
+
+        <div class="main__price-list__items">
+          <div class="main__price-list__items__item">
+            <div class="marker_small"></div>
+
+            <div class="main__price-list__items_item__description">
+              <div class="main__price-list__items_item__description__header">
+                <span
+                  class="main__price-list__items_item__description__header__name"
+                >
+                  Landing-page
+                </span>
+
+                <span
+                  class="main__price-list__items_item__description__header__price"
+                  >от 8000 руб.</span
+                >
+              </div>
+              <p class="main__price-list__items_item__description__text">
+                Одностраничный сайт для презентации услуг/товаров/...
+              </p>
+            </div>
+          </div>
+
+          <div class="main__price-list__items__item">
+            <div class="marker_small"></div>
+
+            <div class="main__price-list__items_item__description">
+              <div class="main__price-list__items_item__description__header">
+                <span
+                  class="main__price-list__items_item__description__header__name"
+                >
+                  Корпоративный сайт
+                </span>
+
+                <span
+                  class="main__price-list__items_item__description__header__price"
+                  >от 20000 руб.</span
+                >
+              </div>
+              <p class="main__price-list__items_item__description__text">
+                Сайт для вашего бизнеса или компании
+              </p>
+            </div>
+          </div>
+
+          <div class="main__price-list__items__item">
+            <div class="marker_small"></div>
+
+            <div class="main__price-list__items_item__description">
+              <div class="main__price-list__items_item__description__header">
+                <span
+                  class="main__price-list__items_item__description__header__name"
+                >
+                  Интернет-магазин
+                </span>
+
+                <span
+                  class="main__price-list__items_item__description__header__price"
+                  >от 30000 руб.</span
+                >
+              </div>
+              <p class="main__price-list__items_item__description__text">
+                Инструмент для ваших продаж в сети
+              </p>
+            </div>
+          </div>
+
+          <div class="main__price-list__items__item">
+            <div class="marker_small"></div>
+
+            <div class="main__price-list__items_item__description">
+              <div class="main__price-list__items_item__description__header">
+                <span
+                  class="main__price-list__items_item__description__header__name"
+                >
+                  Web-приложение
+                </span>
+
+                <span
+                  class="main__price-list__items_item__description__header__price"
+                  >от 28000 руб.</span
+                >
+              </div>
+              <p class="main__price-list__items_item__description__text">
+                Приложение внутри браузера для лучшего комфорта
+              </p>
+            </div>
+          </div>
+
+          <div class="main__price-list__items__item">
+            <div class="marker_small"></div>
+
+            <div class="main__price-list__items_item__description">
+              <div class="main__price-list__items_item__description__header">
+                <span
+                  class="main__price-list__items_item__description__header__name"
+                >
+                  Android/IOS Приложение
+                </span>
+
+                <span
+                  class="main__price-list__items_item__description__header__price"
+                  >от 25000 руб.</span
+                >
+              </div>
+              <p class="main__price-list__items_item__description__text">
+                Приложение для смартфона любой ОС
+              </p>
+            </div>
+          </div>
+
+          <div class="main__price-list__items__item">
+            <div class="marker_small"></div>
+
+            <div class="main__price-list__items_item__description">
+              <div class="main__price-list__items_item__description__header">
+                <span
+                  class="main__price-list__items_item__description__header__name"
+                >
+                  Дизайн
+                </span>
+
+                <span
+                  class="main__price-list__items_item__description__header__price"
+                  >Индивидуально</span
+                >
+              </div>
+              <p class="main__price-list__items_item__description__text">
+                Создам дизайн для вашего сайта/приложения...
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contacts">
+      <img src="./assets/images/Photo.png" alt="photo" class="footer__photo" />
+
+      <div class="footer__contacts">
+        <div class="footer__contacts main__header_block">
+          <div class="main__expiriens__title main__header_block_titles">
+            <div class="marker"></div>
+            <h4
+              class="main__expiriens__title__text main__header_block_titles_text"
+            >
+              Контакты
+            </h4>
+          </div>
+
+          <h2 class="main__expiriens__header main__header_block_headers">
+            Свяжитесь со мной
+          </h2>
+
+          <div class="yellow-line"></div>
+        </div>
+
+        <div class="footer__contacts__sotial">
+          <p class="footer__contacts__sotial__text">
+            Любым удобным для вас способом:
+          </p>
+
+          <div class="footer__contacts__sotial__links">
+            <a href="http://facebook.com"
+              ><img src="./assets/icons/basic/Facebook.svg" alt="facebook"
+            /></a>
+            <a href="https://telegram.org"
+              ><img src="./assets/icons/basic/Telegram.svg" alt="github"
+            /></a>
+            <a href="http://instagram.com"
+              ><img src="./assets/icons/basic/Instagram.svg" alt="instagram"
+            /></a>
+          </div>
+
+          <p class="footer__contacts__sotial__text">
+            Или оставьте ваши данные и я сама вам напишу:
+          </p>
+        </div>
+
+        <div class="footer__contacts__inpt-form">
+          <form class="contacts-form">
+            <div class="inputs__name__email">
+              <div class="footer__contacts__inpt-form__name inpt_block">
+                <label
+                  class="footer__contacts__inpt-form__name_text inpt_block_text"
+                >
+                  Ваше имя
+                </label>
+                <input type="text" class="inpt_name inpt" />
+                <p
+                  class="footer__contacts__inpt-form__name_error error_message hide"
+                >
+                  Имя должно быть не короче 3 символов
+                </p>
+              </div>
+
+              <div class="footer__contacts__inpt-form__email inpt_block">
+                <label
+                  class="footer__contacts__inpt-form__email_text inpt_block_text"
+                >
+                  Ваша почта
+                </label>
+                <input type="email" class="inpt_email inpt" />
+
+                <p
+                  class="footer__contacts__inpt-form__email_error error_message hide"
+                >
+                Введите корректный email
+                </p>
+              </div>
+            </div>
+
+            <div class="footer__contacts__inpt-form__message inpt_block">
+              <label
+                class="footer__contacts__inpt-form__message_text inpt_block_text"
+              >
+                Ваше сообщение
+              </label>
+              <textarea
+                rows="9"
+                maxlength="550"
+                class="inpt_message inpt"
+              ></textarea>
+            </div>
+
+            <button
+              class="footer__contacts__inpt-form__btn button button_yellow"
+            >
+              Отправить сообщение
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
